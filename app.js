@@ -46,5 +46,5 @@ app.get('/createpoststable', (req, res)=>{
     
 app.listen ('5000', ()=>
 {
-    console.log ("login successfully");
+    console.log ("logged in successfully");
 });
