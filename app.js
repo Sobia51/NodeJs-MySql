@@ -9,7 +9,7 @@ const db = mysql.createConnection({
    database :'nodemysql'
   });
   
-  // connect 
+  // connection
 
 db.connect((err)=>{
 if(err)
@@ -23,7 +23,7 @@ if(err)
 
 const app = express ();
 
-// create DB 
+// creating DB 
 
 app.get('/createdb', (req, res)=>{
 db.query("CREATE DATABASE nodemysql", (err, result) =>{
@@ -33,7 +33,7 @@ db.query("CREATE DATABASE nodemysql", (err, result) =>{
   });
 });
 
-// create tables 
+// creating tables 
 
 app.get('/createpoststable', (req, res)=>{
     let sql = "CREATE TABLE posts (id INT, name VARCHAR(255), age INT(3), city VARCHAR(255))";  
