@@ -40,7 +40,7 @@ app.get('/createpoststable', (req, res)=>{
     db.query(sql, (err, result) =>{
         if (err) throw err;
         console.log(result);
-        res.send('poststable created.....')
+        res.send('poststable created..')
       });
     });
     
